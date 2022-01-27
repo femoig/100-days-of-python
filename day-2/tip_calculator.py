@@ -33,9 +33,11 @@ def calcula_conta():
 if __name__ == '__main__':
     calcula_conta()
 
-# Mesa: 4
-# Valor Total: $22
-# Quanto deseja pagar de serviço? [5%, 10% ou 15%]....: 5
-# Taxa de Serviço: $1.1
+# ************ Volte Sempre ************
+# Mesa: 1
+# Valor Total sem Serviço: $193
+# Quanto deseja pagar de serviço? [5%, 10% ou 15%]....: 10
+# Taxa de Serviço: $19.3
+# Valor Total com Serviço: $212.3
 # Dividir por quantas pessoas?....: 4
-# Valor por pessoa: $5.775
+# Valor por pessoa: $53.08
