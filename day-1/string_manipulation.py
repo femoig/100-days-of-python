@@ -3,7 +3,7 @@ def main():
 
 def say_name():
     name = input("Qual seu nome? ")
-    print(f'Hello {name}!')
+    print(f'Hello {name}!\n')
     print(f'Seu nome tem um tamanho de {len(name)}')
 
 if __name__ == '__main__':
