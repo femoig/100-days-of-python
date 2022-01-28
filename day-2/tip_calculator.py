@@ -1,5 +1,6 @@
 import random
 
+# calculations
 
 def calcula_taxa_servico(valor_total_conta, gorjeta):
     taxa_servico = (gorjeta / 100) * valor_total_conta
