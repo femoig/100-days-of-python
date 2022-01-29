@@ -1,5 +1,5 @@
 '''
-Loops with Range
+Loops with Range, Random choice
 '''
 import random
 
@@ -15,11 +15,11 @@ def generate_password(size):
         primeiro_digito = (position == 0)
 
         if primeiro_digito:
-            senha += letras_maiusculas[random.randint(0, len(letras_maiusculas) - 1)]
+            senha += random.choice(letras_maiusculas)
         elif ultimo_digito:
-            senha += caracteres_especiais[random.randint(0, len(caracteres_especiais) - 1)]
+            senha += random.choice(caracteres_especiais)
         else:
-            senha += letras_minusculas[random.randint(0, len(letras_minusculas) - 1)]
+            senha += random.choice(letras_minusculas)
     return senha
 
 
