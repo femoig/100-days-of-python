@@ -27,7 +27,7 @@ scissors = '''
 ---.__(___)
 '''
 
-lista_opcoes = [rock, paper, scissors]
+lista_imagens = [rock, paper, scissors]
 
 def valida_escolha_jogador(escolha_jogador):
     if escolha_jogador > 2:
@@ -58,10 +58,10 @@ def verifica_vencedor(escolha_jogador, escolha_computador):
 def main():
     escolha_jogador = int(input("Qual você escolhe? Digite 0 para Pedra, 1 para Papel or 2 para Tesoura...: "))
     valida_escolha_jogador(escolha_jogador)
-    print(f'\nVocê escolheu:{lista_opcoes[escolha_jogador]}')
+    print(f'\nVocê escolheu:{lista_imagens[escolha_jogador]}')
 
     escolha_computador = random.randint(0, 2)
-    print(f'\nComputador escolheu:{lista_opcoes[escolha_computador]}')
+    print(f'\nComputador escolheu:{lista_imagens[escolha_computador]}')
 
     verifica_vencedor(escolha_jogador, escolha_computador)
 
