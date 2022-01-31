@@ -29,17 +29,23 @@ scissors = '''
 
 lista_imagens = [rock, paper, scissors]
 
+
+def jogar():
+
+    print("Bem vindo ao Joquempô!!!")
+    escolha_jogador = int(input("Qual você escolhe? Digite 0 para Pedra, 1 para Papel or 2 para Tesoura...: "))
+    valida_escolha_jogador(escolha_jogador)
+    print(f'\nVocê escolheu:{lista_imagens[escolha_jogador]}')
+
+    escolha_computador = random.randint(0, 2)
+    print(f'\nComputador escolheu:{lista_imagens[escolha_computador]}')
+
+    verifica_vencedor(escolha_jogador, escolha_computador)
+
 def valida_escolha_jogador(escolha_jogador):
     if escolha_jogador > 2:
         print("Escolha inválida...Valores válidos são [0 para Pedra, 1 para Papel or 2 para Tesoura]")
-        jogar_novamente()
-
-def jogar_novamente():
-    jogar_novamente = input("\nDeseja jogar novamente? S para Sim, N para Não...: ")
-    if jogar_novamente.upper() == "S":
         main()
-    else:
-        quit()
 
 
 def verifica_vencedor(escolha_jogador, escolha_computador):
@@ -56,16 +62,12 @@ def verifica_vencedor(escolha_jogador, escolha_computador):
 
 
 def main():
-    escolha_jogador = int(input("Qual você escolhe? Digite 0 para Pedra, 1 para Papel or 2 para Tesoura...: "))
-    valida_escolha_jogador(escolha_jogador)
-    print(f'\nVocê escolheu:{lista_imagens[escolha_jogador]}')
-
-    escolha_computador = random.randint(0, 2)
-    print(f'\nComputador escolheu:{lista_imagens[escolha_computador]}')
-
-    verifica_vencedor(escolha_jogador, escolha_computador)
-
-    jogar_novamente()
+    jogar_novamente = "S"
+    while True:
+        jogar_novamente = input("\nDeseja jogar? S para Sim, N para Não...: ")
+        if jogar_novamente.upper() != "S":
+            quit()
+        jogar()
 
 
 if __name__ == "__main__":
