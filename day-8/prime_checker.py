@@ -14,6 +14,8 @@ def prime_check(number):
         print(f"O número {number} não é primo!")
 
 
+#teste
+
 
 
 

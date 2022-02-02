@@ -29,7 +29,7 @@ def caeser_method(start_text, shift, direction):
 #         new_letra = alphabet[new_position]
 #         encoded_text += new_letra
 #     print(f"Encoded text is...: {encoded_text}")
-#
+# 
 # def decrypt(text, shift):
 #     decoded_text = ""
 #     for letra in text:
